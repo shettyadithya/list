@@ -16,7 +16,7 @@ function getInput() {
 }
 
 function validate(name, city, emp) {
-  let empregex = /^[0-9]+$/;    
+  let empregex = /^[0-9]+$/;
   let namecheck = /^[a-z ,.'-]+$/i;
   if (
     namecheck.test(name) == true &&
@@ -27,7 +27,6 @@ function validate(name, city, emp) {
   }
   return false;
 }
-
 function remove(e) {
   if (e.target.classList.contains('delButton')) {
     e.target.parentElement.remove('row');

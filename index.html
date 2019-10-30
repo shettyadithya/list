@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>List</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
         <input type="text" name="cityName" id="c_name"  required>
         </p><br>
         <label for="">EmpId:<input type="text" name="employeeId" id="eid"  required></label>
-        <input type="button" value="Add" class="Btn" id="addTask" onclick="getInput()" >
+        <input type="button" value="Add" class="Btn" id="addTask" >  <!--onclick="getInput()"-->
      </form>
     </div>
     <div id="display">
@@ -33,7 +34,9 @@
         </tr>
       </table>
     </div>
-    <button class="Btn clr"  onclick="removeAll()">Clear All</button>
-    <script src="script.js"></script>
+    <button class="Btn clr">Clear All</button>
+    <!-- <script src="script.js"></script> -->
+    <script src="script2.js"></script>
+    
   </body>
 </html>
