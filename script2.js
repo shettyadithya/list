@@ -1,15 +1,15 @@
 $(document).ready(function() {
   $('#addTask').click(function() {
-    let $name = $('#usName').val();
+    let $names = $('#usName').val();
     let $emp = $('#eid').val();
     let $city = $('#c_name').val();
-    let $checks = validate($name, $city, $emp);
+    let $checks = validate($names, $city, $emp);
     if ($checks === true) {
       let $res = $('<tr>', {
         id: 'row'
       }).appendTo('#tabData');
       $res
-        .append(`<td>${$name}</td><td>${$city}</td><td>${$emp}</td>`)
+        .append(`<td>${$names}</td><td>${$city}</td><td>${$emp}</td>`)
         .append(`<button class="delButton">Delete</button>`);
       $('.delButton').click(function() {
         $(this)
