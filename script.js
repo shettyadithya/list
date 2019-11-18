@@ -4,7 +4,7 @@ function getInput() {
   const emp = document.getElementById('eid').value;
   const ele = document.getElementById('tabData');
   let checks = validate(name, city, emp);
-  if (checks === true) {
+  if (checks) {
     let row = document.createElement(`tr`);
     row.addEventListener('click', remove);
     row.setAttribute('id', 'row');
